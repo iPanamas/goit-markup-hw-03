@@ -20,31 +20,30 @@
 <body>
     <!-- header -->
     <header class="header">
-        <div class="container">
-            <div class="header-item">
-                <nav class="header-nav">
-                    <a class="header-logo" href="/index.html">Web<span>Studio</span></a>
-                    <ul class="nav">
-                        <li class="nav-list">
-                            <a class="nav-link current" href="">Студия</a>
-                        </li>
-                        <li class="nav-list">
-                            <a class="nav-link" href="./portfolio.html">Портфолио</a>
-                        </li>
-                        <li class="nav-list">
-                            <a class="nav-link" href="">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-                <ul class="header-contacts">
-                    <li class="header-contact">
-                        <a class="headerContact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <div class="container header-container">
+            <nav class="header-nav">
+                <a class="header-logo" href="/index.html">Web<span>Studio</span></a>
+                <ul class="nav">
+                    <li class="nav-list">
+                        <a class="nav-link current" href="">Студия</a>
                     </li>
-                    <li class="header-contact">
-                        <a class="headerContact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    <li class="nav-list">
+                        <a class="nav-link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="nav-list">
+                        <a class="nav-link" href="">Контакты</a>
                     </li>
                 </ul>
-            </div>
+            </nav>
+            <ul class="header-contacts">
+                <li class="header-contact">
+                    <a class="headerContact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="header-contact">
+                    <a class="headerContact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
         </div><!-- container -->
     </header><!-- header -->
     <main>
@@ -55,7 +54,7 @@
             </div> <!-- container -->
         </section><!-- content -->
         <!-- skills -->
-        <section class="section-skills">
+        <section class="section section-skills">
             <div class="container">
                 <h2 class="visually-hidden">Наши преимущества</h2>
                 <ul class="skills-items">
@@ -89,13 +88,13 @@
                 <h2 class="whatWeDo-title">Чем мы занимаемся</h2>
                 <ul class="whatWeDo-items">
                     <li class="whatWeDo-item">
-                        <img src="./img/whatWeDo/whatWeDo_1.jpg" alt="" width="370" height="294">
+                        <img class="whatWeDo-image" src="./img/whatWeDo/whatWeDo_1.jpg" alt="" width="370" height="294">
                     </li>
                     <li class="whatWeDo-item">
-                        <img src="./img/whatWeDo/whatWeDo_2.jpg" alt="" width="370" height="294">
+                        <img class="whatWeDo-image" src="./img/whatWeDo/whatWeDo_2.jpg" alt="" width="370" height="294">
                     </li>
                     <li class="whatWeDo-item">
-                        <img src="./img/whatWeDo/whatWeDo_3.jpg" alt="" width="370" height="294">
+                        <img class="whatWeDo-image" src="./img/whatWeDo/whatWeDo_3.jpg" alt="" width="370" height="294">
                     </li>
                 </ul>
             </div>
@@ -108,26 +107,34 @@
                     <li class="team-card">
                         <img class="team-photo" src="./img/Team/teammate_1.jpg" alt="teammate-1" width="270"
                             height="260">
-                        <h3 class="team-name">Игорь Демьяненко</h3>
-                        <p class="team-prof" lang="en">Product Designer</p>
+                        <div class="team-info">
+                            <h3 class="team-name">Игорь Демьяненко</h3>
+                            <p class="team-prof" lang="en">Product Designer</p>
+                        </div>
                     </li>
                     <li class="team-card">
                         <img class="team-photo" src="./img/Team/teammate_2.jpg" alt="teammate-2" width="270"
                             height="260">
-                        <h3 class="team-name">Ольга Репина</h3>
-                        <p class="team-prof" lang="en">Frontend Developer</p>
+                        <div class="team-info">
+                            <h3 class="team-name">Ольга Репина</h3>
+                            <p class="team-prof" lang="en">Frontend Developer</p>
+                        </div>
                     </li>
                     <li class="team-card">
                         <img class="team-photo" src="./img/Team/teammate_3.jpg" alt="teammate-3" width="270"
                             height="260">
-                        <h3 class="team-name">Николай Тарасов</h3>
-                        <p class="team-prof" lang="en">Marketing</p>
+                        <div class="team-info">
+                            <h3 class="team-name">Николай Тарасов</h3>
+                            <p class="team-prof" lang="en">Marketing</p>
+                        </div>
                     </li>
                     <li class="team-card">
                         <img class="team-photo" src="./img/Team/teammate_4.jpg" alt="teammate-4" width="270"
                             height="260">
-                        <h3 class="team-name">Михаил Ермаков</h3>
-                        <p class="team-prof" lang="en">UI Designer</p>
+                        <div class="team-info">
+                            <h3 class="team-name">Михаил Ермаков</h3>
+                            <p class="team-prof" lang="en">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div><!-- container -->
@@ -138,17 +145,17 @@
         <div class="container">
             <div class="footer-inner">
                 <a class="footer-logo" href="#">Web<span>Studio</span></a>
-                <address>
-                    <ul class="footer-contacts">
-                        <li class="footer-address">
+                <address class="footer-address">
+                    <ul class="footer-items">
+                        <li class="footer-item">
                             <a class="address-link" href="https://goo.gl/maps/zjhcR8GMYz5ZY6fR8" target="_blank">г.
                                 Киев, пр-т Леси Украинки, 26</a>
                         </li>
-                        <li class="footer-contact">
-                            <a class="footerContact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <li class="footer-item">
+                            <a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                         </li>
-                        <li class="footer-contact">
-                            <a class="footerContact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        <li class="footer-item">
+                            <a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
                         </li>
                     </ul>
                 </address>
